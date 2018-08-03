@@ -27,3 +27,6 @@ class USEEncoder(object):
         if not sentences:
             return None
         return self.sess.run(self.embedding_fun, feed_dict={self.sentences: sentences})
+
+    def dim(self):
+        return 512
